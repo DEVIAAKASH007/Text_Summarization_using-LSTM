@@ -16,6 +16,23 @@ Our objective here is to generate a summary for the "Amazon Fine Food reviews" u
 
 Data Scource: [Kaggle](https://www.kaggle.com/snap/amazon-fine-food-reviews?select=Reviews.csv)
 
+## Quick start
+1. Create and activate a Python environment.
+2. Install dependencies:
+	`pip install -r requirements.txt`
+3. Download the dataset from Kaggle.
+4. Update the dataset path inside the notebook if needed.
+	The current notebook path is `../input/amazon-fine-food-reviews/Reviews.csv`.
+5. Open and run the notebook:
+	`NLP_Text_Summarization.ipynb`
+
+## Project structure
+- `NLP_Text_Summarization.ipynb`: End-to-end notebook for abstractive and extractive summarization.
+- `attention.py`: Custom Bahdanau attention layer used by the LSTM encoder-decoder.
+
+## Notes
+- If NLTK stopwords are missing, run `nltk.download('stopwords')` in a notebook cell.
+
 ## Project pipeline
 1. Understanding Text Summarization,
 2. Text pre-processing,
